@@ -1,0 +1,303 @@
+body {
+  background-color: rgb(19, 19, 19) !important;
+}
+body .secon {
+  color: rgb(1, 26, 148);
+}
+
+.navbar {
+  background-color: rgb(19, 19, 19);
+}
+.navbar .container-fluid .navbar-brand {
+  margin-left: 10px;
+  font-size: x-large;
+  font-family: viga;
+  grid-area: nama;
+  color: white;
+}
+.navbar .container-fluid .navbar-nav {
+  margin-left: 480px;
+}
+.navbar .container-fluid .navbar-nav a {
+  text-shadow: 1px 0 6px rgb(110, 110, 110);
+  padding: 0 20px;
+  color: white;
+}
+.navbar .container-fluid .navbar-nav a:hover {
+  color: rgb(1, 26, 148);
+  text-shadow: 1px 0 3px black;
+}
+
+section {
+  padding-top: 6rem;
+  margin-top: 100px;
+}
+
+#about {
+  margin-top: 100px;
+}
+
+.grup-about {
+  flex-wrap: wrap;
+  display: flex;
+}
+.grup-about .about {
+  position: relative;
+  top: -28px;
+  margin-right: 200px;
+}
+.grup-about .about .cv {
+  width: 150px;
+  background-color: rgb(1, 26, 148);
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-right: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.grup-about .about .cv:hover {
+  background-color: white;
+  transform: translateY(-5px);
+}
+.grup-about .about .d-cv {
+  text-align: center;
+  margin-right: 5px;
+}
+.grup-about .about .d-cv a {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+}
+.grup-about .about .d-cv a svg {
+  margin-bottom: 5px;
+}
+.grup-about .about .sosial {
+  width: 100px;
+}
+.grup-about .about .sosial a {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+  font-size: 25px;
+}
+.grup-about .about .sosial a P {
+  display: none;
+}
+.grup-about .about .sosial a .wa:hover {
+  color: rgb(88, 172, 88);
+}
+.grup-about .about .sosial a .ig:hover {
+  color: white;
+}
+.grup-about .about .sosial a .fb:hover {
+  color: rgb(1, 26, 148);
+}
+.grup-about .about h1 {
+  color: white;
+}
+.grup-about .about h4 {
+  color: rgb(1, 26, 148);
+  font-family: viga;
+}
+.grup-about .about p {
+  color: rgb(138, 138, 138);
+}
+.grup-about .foto {
+  position: relative;
+  top: -160px;
+}
+
+@media (max-width: 1027px) {
+  .navbar-nav {
+    position: relative;
+    margin-left: 250px !important;
+  }
+  .foto img {
+    width: 350px;
+  }
+  .grup-about .about {
+    margin-right: 120px;
+    top: -50px;
+  }
+}
+@media (max-width: 1021px) {
+  .navbar-nav a {
+    font-size: 14px;
+    transition: 0.6s;
+  }
+  .grup-about .about {
+    top: -85px;
+  }
+  .foto img {
+    width: 320px;
+    transition: 0.6s;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-nav a {
+    text-shadow: 0 1px 6px black !important;
+    color: rgb(138, 138, 138) !important;
+    margin-left: -260px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .foto {
+    position: relative;
+    top: -500px !important;
+  }
+  .foto img {
+    width: 300px;
+    float: right;
+  }
+  .about {
+    left: -101px;
+  }
+  .about p {
+    width: 400px;
+  }
+  .about h4 {
+    font-size: 20px;
+  }
+  .about h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 958px) {
+  .about {
+    left: -50px;
+  }
+}
+@media (max-width: 886px) {
+  .about {
+    left: -25px;
+  }
+}
+@media (max-width: 812px) {
+  .about {
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    left: -90px;
+  }
+  .about p {
+    width: 350px;
+  }
+  .foto {
+    top: -520px !important;
+    left: 100px;
+  }
+}
+@media (max-width: 735px) {
+  .foto {
+    left: 70px;
+  }
+  .foto img {
+    width: 290px;
+  }
+  .about {
+    left: -70px;
+  }
+  .about p {
+    width: 340px;
+  }
+  .about h1 {
+    width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    left: -40px;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project .card {
+    width: 100%;
+  }
+  .tolls ul li img {
+    border-radius: 2px;
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+@media (max-width: 660px) {
+  #about {
+    margin-top: 50px;
+  }
+  .grup-about {
+    display: flex;
+    justify-content: center;
+  }
+  .grup-about .about {
+    margin-top: 30px;
+    margin-right: 0;
+    position: static;
+    order: 1;
+  }
+  .grup-about .about h1 {
+    font-size: 30px;
+  }
+  .grup-about .about p {
+    width: 100%;
+  }
+  .grup-about .foto {
+    position: static;
+    display: flex;
+    justify-content: start;
+  }
+  .grup-about .foto img {
+    float: none;
+  }
+}
+@media (max-width: 575px) {
+  .grup-about .about {
+    margin-left: 20px;
+  }
+}
+.card {
+  margin-top: 50px;
+  background-color: rgb(19, 19, 19) !important;
+  box-shadow: 5px 0 10px black;
+  width: 20rem;
+}
+.card .card-body .btn {
+  background-color: rgb(1, 26, 148);
+  color: rgb(138, 138, 138);
+}
+.card .card-body .btn i {
+  margin-right: 5px;
+}
+
+.tolls {
+  background-color: rgb(19, 19, 19);
+  box-shadow: 2px 0 10px black;
+  border-radius: 3px;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
+  margin-bottom: 290px;
+}
+.tolls ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+.tolls ul li {
+  list-style: none;
+}
+.tolls ul li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+footer h7 {
+  color: rgb(138, 138, 138);
+}
+footer h7 a {
+  color: rgb(1, 26, 148);
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */
